@@ -162,3 +162,5 @@ Make sure to keep the value as comfortably small as possible to keep security ri
   future version unintentionally.
 * Commit, do not mess with rakefile, version, or history. (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
+
+Kick of Travis Build
