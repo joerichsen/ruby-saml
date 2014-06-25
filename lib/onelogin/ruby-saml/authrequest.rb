@@ -36,7 +36,7 @@ module OneLogin
         base64_request    = Base64.encode64(request)
         request_params    = {"SAMLRequest" => base64_request}
 
-        if settings.simple_sign_request && settings.private_key
+        if settings.sign_request && settings.private_key
           params['SigAlg']    = 'http://www.w3.org/2000/09/xmldsig#rsa-sha1'
           url_string          = "SAMLRequest=#{CGI.escape(base64_request)}"
           url_string         += "&RelayState=#{CGI.escape(params['RelayState'])}" if params['RelayState']
