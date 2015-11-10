@@ -10,6 +10,7 @@ module OneLogin
       end
       attr_accessor :assertion_consumer_service_url, :issuer, :sp_name_qualifier
       attr_accessor :assertion_consumer_service_binding
+      attr_accessor :assertion_consumer_service_index
       attr_accessor :idp_sso_target_url, :idp_cert_fingerprint, :idp_cert, :name_identifier_format
       attr_accessor :authn_context
       attr_accessor :idp_slo_target_url
@@ -31,6 +32,7 @@ module OneLogin
 
       DEFAULTS = {
         :assertion_consumer_service_binding        => "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+        :assertion_consumer_service_index          => 0,
         :assertion_consumer_logout_service_binding => "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
         :compress_request                          => true,
         :sign_request                              => false,
