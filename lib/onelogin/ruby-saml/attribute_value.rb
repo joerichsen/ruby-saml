@@ -8,7 +8,7 @@ module OneLogin
       attr_accessor :values
       def initialize(str="", values=[])
         @values = values
-        super(str)
+        super(str || '')
       end
     end
   end
